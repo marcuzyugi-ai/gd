@@ -1,13 +1,3 @@
-scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile1`, function (sprite, location) {
-    game.setGameOverMessage(false, "GAME OVER!")
-    if (game.ask("Retry")) {
-        info.changeLifeBy(-1)
-    }
-})
-controller.combos.attachCombo(controller.combos.idToString(controller.combos.ID.B), function () {
-    info.setLife(3)
-    light.showAnimation(light.rainbowAnimation, 500)
-})
 controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
     mySprite.setVelocity(0, -100)
     if (true) {
